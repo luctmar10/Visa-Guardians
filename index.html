@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visa Guardians - Your trusted partner for visa processing services. We offer expert guidance for tourist, business, student, and work visas.">
+    <meta name="keywords" content="visa processing, visa consultancy, immigration services, visa assistance">
+    <meta name="author" content="Visa Guardians">
+    <title>Visa Guardians</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #605678, #4a4466);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            max-width: 80px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #4a4466;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #3a3656;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #605678;
+            border-bottom: 2px solid #605678;
+            padding-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #f8f9fa;
+            margin: 8px 0;
+            padding: 10px;
+            border-left: 5px solid #605678;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4a4466;
+            color: white;
+            margin-top: 30px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .cta-button {
+            display: inline-block;
+            background: #605678;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #4a4466;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        form button {
+            background: #605678;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: #4a4466;
+        }
+        .social-media {
+            margin-top: 10px;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #d1d1d1;
+        }
+        #back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #605678;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        #back-to-top:hover {
+            background: #4a4466;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .testimonial {
+            text-align: center;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+        .testimonial h3 {
+            color: #605678;
+            margin: 10px 0;
+        }
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+            .container {
+                width: 90%;
+                padding: 20px;
+            }
+            header img {
+                max-width: 60px;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            header {
+                padding: 15px;
+            }
+            header img {
+                max-width: 50px;
+            }
+            nav a {
+                padding: 8px;
+            }
+            .container {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.JPG" alt="Visa Guardians Logo">
+        <h1>Visa Guardians</h1>
+        <p>Your Trusted Partner in UAE Visa Processing and Document Clearance</p>
+        <a href="https://wa.me/971542667817" class="cta-button" target="_blank">Get Started Today!</a>
+    </header>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#values">Our Values</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#admin">Admin Profile</a>
+        <a href="#why-choose-us">Why Choose Us?</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+    <main>
+        <section id="profile" class="container">
+            <h2>Our Profile</h2>
+            <p>Visa Guardians is a professional visa consultancy firm dedicated to assisting individuals and businesses with their visa processing needs. We provide expert guidance to ensure a smooth and hassle-free experience.</p>
+        </section>
+        <section id="values" class="container">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity and Transparency</li>
+                <li>Customer Satisfaction</li>
+                <li>Efficiency and Reliability</li>
+                <li>Professionalism</li>
+            </ul>
+        </section>
+        <section id="services" class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Tourist & Freelance Visa Processing</li>
+                <li>Immigration / Labour Absconding Removal</li>
+                <li>Work Permit & Immigration Services</li>
+                <li>Visa Extension</li>
+                <li>Air Ticket</li>
+            </ul>
+        </section>
+        <section id="admin" class="container">
+            <h2>Admin Profile</h2>
+            <p><strong>Name:</strong> Sai Minn Khant Kyaw</p>
+            <p><strong>Position:</strong> Founder & CEO</p>
+            <p><strong>Experience:</strong> 2+ years in visa consulting and immigration services.</p>
+            <p><strong>Vision:</strong> To simplify UAE visa processing and provide hassle-free services to clients worldwide.</p>
+        </section>
+        <section id="why-choose-us" class="container">
+            <h2>Why Choose Visa Guardians?</h2>
+            <ul>
+                <li>Expert visa consultants with years of experience</li>
+                <li>Fast and hassle-free processing</li>
+                <li>Personalized assistance tailored to your needs</li>
+                <li>Strong track record of successful applications</li>
+                <li>Reliable customer support for all queries</li>
+            </ul>
+        </section>
+        <section id="testimonials" class="container">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <img src="Avatar.png" alt="Customer 1">
+                    <h3>Ya Min</h3>
+                    <p>"Visa Guardians made the visa process so easy and stress-free. Highly recommended!"</p>
+                </div>
+                <div class="testimonial">
+                    <img src="917029.png" alt="Customer 2">
+                    <h3>Halim</h3>
+                    <p>"He is professional and efficient. I got my visa approved in record time!"</p>
+                </div>
+                <div class="testimonial">
+                    <img src="917029.png" alt="Customer 3">
+                    <h3>Kyaw Zin Thant  </h3>
+                    <p>"Excellent service and support throughout the entire process. Thank you, Visa Guardians!"</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+        
+            <p>Email: visaguardians@gmail.com</p>
+            <p>Phone: +971542667817</p>
+            <p>Address: Al Amer Main Branch, Burjuman, UAE</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Visa Guardians. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/visaguardians" target="_blank">Facebook</a>
+            <a href="https://wa.me/971542667817"target="_blank">WhatsApp</a>
+            
+        </div>
+    </footer>
+    <button id="back-to-top" title="Go to top">↑</button>
+    <script>
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+        };
+
+        document.getElementById("back-to-top").onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+</body>
+</html>
